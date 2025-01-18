@@ -6,20 +6,18 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the Exercise3 Project.");
-    }
   
-    {
         Random randomGenerator = new Random();
-        int number = RandomNumberGenerator.Next(1, 101);
+        int magicNumber = randomGenerator.Next(1, 101);
 
-        int guess = "-1";
+        int guess = -1;
 
-        While (!= magicNumber)
+        while (guess != magicNumber)
         {
-            Console.Write("What is your guess"?);
-            int phrase = Console.ReadLine();
+            Console.Write("what is your guess ?");
+            guess = int.Parse(Console.ReadLine());
 
-            if (MagicNumber > guess)
+            if (magicNumber > guess)
             {
                 Console.WriteLine("heigher");
             }

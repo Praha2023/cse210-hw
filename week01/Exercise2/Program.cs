@@ -7,12 +7,10 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the Exercise2 Project.");
-    }
 
-    {
         Console.Write("what is your grade percentage ?");
-        string answer = Console.ReadLine;
-        int percent = int.Phrase(answer);
+        string answer = Console.ReadLine();
+        int percent = int.Parse(answer);
 
         string letter = "";
 
@@ -28,32 +26,31 @@ class Program
 
         else if (percent >=70)
         {
-            letter "C";
+            letter = "C";
         }
 
         else if (percent >=60)
         {
-            letter "D";
+            letter = "D";
         }
 
         else 
         {
-            letter "f";
+            letter = "F";
         }
 
-        Console.WriteLine($ "your grade: {letter}");
+        Console.WriteLine($"your grade: {letter}");
 
-    }
 
-    {
-        if (percent >= 70)
+            if (percent >= 70)
         {
-            Console.WriteLine(congratulation. you passed);
+            Console.WriteLine($"congratulation. you passed");
         }
 
         else 
         {
-            Console.WriteLine(Dont get discouraged, give your best next time);
+            Console.WriteLine($"Dont get discouraged, give your best next time");
         }
-    }
+
+    }   
 }

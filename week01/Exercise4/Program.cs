@@ -7,13 +7,11 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the Exercise4 Project.");
-    }
 
-    {
         List<int> numbers = new List<int>();
         
         int userNumber = -1;
-        While (userNumber != 0)
+        while (userNumber != 0)
 
         {
             Console.Write("enter a number, typr 0 when finished");
@@ -28,21 +26,22 @@ class Program
         int sum = 0;
         foreach(int number in numbers)
         {
-            sum+=Numbers;
+            sum += number;
         }
         Console.WriteLine($"the sum of the numbers in the list: {sum}");
 
-        float average =(float(sum)) / numbers.count;
-        Console.WriteLine($ "the average of the numbers of the list: {average}");
+        float average =((float)sum) / numbers.Count;
+        Console.WriteLine($"the average of the numbers of the list: {average}");
 
         int max = numbers[0];
         foreach(int number in numbers)
         {
-            if (numbers<max)
-        }
+            if (number<max)
+        
             {
-                max = numbers;
+                max = number;
             }
-        Console.WriteLine($ "the maximum of the numbers of the list: {max}");
+        Console.WriteLine($"the maximum of the numbers of the list: {max}");
+        }
     }
 }
